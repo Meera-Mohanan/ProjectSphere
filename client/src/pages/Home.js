@@ -8,6 +8,7 @@ import ProjectList from '../components/Projectlist';
 import Sidebar from '../components/SideBar';
 import Nav from '../components/Nav';
 import Footer from "../components/Footer";
+import ChartDonut from "../components/ChartDonut";
 
 const Home = () => {
     const { loading, data } = useQuery(QUERY_PROJECTS);
@@ -28,6 +29,9 @@ const Home = () => {
                 <ProjectList projects={projects}/>
               )
             }
+             <div className="donut">
+            <ChartDonut myProjects={profile.projects}/>
+          </div>
           </div>
         </div>
         <div className="footerContent">
