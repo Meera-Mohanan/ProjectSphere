@@ -1,30 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useQuery } from '@apollo/client';
-import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { QUERY_SINGLE_PROJECT } from '../utils/queries';
 import TaskBoard from '../components/TaskBoard';
-
-import {DndContext} from '@dnd-kit/core';
-
-import ProjectList from '../components/ProjectList';
-import Nav from '../components/Nav';
-import Sidebar from '../components/SideBar';
+import { DndContext } from '@dnd-kit/core';
 import DraggableCard from '../components/DraggableCard';
 import DroppableZone from '../components/DroppableZone';
 
-
-
 const Project = () => {
-
-// variables and functions------------------
-
-  // routing variables
+  // Routing variables
   const { projectId } = useParams();
   const { loading, data } = useQuery(QUERY_SINGLE_PROJECT, {
     variables: { projectId: projectId },
   });
-  //pulls in project data based on url
+  // Pulls in project data based on url
   const project = data?.project || {};
 
   // Containers for the drop zones
@@ -32,31 +21,38 @@ const Project = () => {
   const [parent, setParent] = useState(null);
 
   const draggableMarkup = (
-    <DraggableCard id="draggable"><span></span></DraggableCard>
+    <DraggableCard id="draggable"><span>Drag me</span></DraggableCard>
   );
 
-  // If the item is dropped over a container, set it as the parent otherwise reset the parent to `null`
+  // If the item is dropped over a container, set it as the parent; otherwise, reset the parent to `null`
   function handleDragEnd(event) {
-    const {over} = event;
+    const { over } = event;
     setParent(over ? over.id : null);
   }
-
-//JSX----------------------------------
 
   if (loading) {
     return <div>Loading...</div>;
   }
+
   return (
     <div>
-      <Nav />
-      <div className='homeContent'>
-      <div className="sidebar">
-        <Sidebar />
-      </div>
-      <TaskBoard />
-      </div>
-      </div>
-
+      <DndContext onDragEnd={handleDragEnd}>
+        <div className='homeContent'>
+          <div className="sidebar">
+            {/* Render your sidebar component here */}
+          </div>
+          <TaskBoard>
+            {containers.map(id => (
+              <DroppableZone key={id} id={id}>
+                {parent === id ? draggableMarkup : `Drop here for ${id}`}
+              </DroppableZone>
+            ))}
+          </TaskBoard>
+        </div>
+        {/* Render your draggableMarkup component here if parent is null */}
+        {parent === null ? draggableMarkup : null}
+      </DndContext>
+    </div>
   );
 };
 
