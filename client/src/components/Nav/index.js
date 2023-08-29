@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { useNavigate } from "react-router-dom";
-// import logo from '';
+// import logo from './';
 import Auth from "../../utils/auth"
 
 function NavBar() {

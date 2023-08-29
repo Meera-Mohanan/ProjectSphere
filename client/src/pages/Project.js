@@ -24,16 +24,6 @@ const Project = () => {
   const containers = ['To Do', 'In Progress', 'Done'];
   const [parent, setParent] = useState(null);
 
-  // const draggableMarkup = (
-  //   <DraggableCard id="draggable"><span></span></DraggableCard>
-  // );
-
-  // If the item is dropped over a container, set it as the parent otherwise reset the parent to `null`
-  function handleDragEnd(event) {
-    const {over} = event;
-    setParent(over ? over.id : null);
-  }
-
 //JSX----------------------------------
 
   if (loading) {
