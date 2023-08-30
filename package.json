@@ -1,5 +1,5 @@
 {
-  "name": "ProjectNook",
+  "name": "ProjectSphere",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Meera-Mohanan/ProjectNook.git"
+    "url": "git+https://github.com/Meera-Mohanan/ProjectSphere.git"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +19,5 @@
     "concurrently": "^5.1.0"
   },
 
-  "homepage": "https://github.com/Meera-Mohanan/ProjectNook#readme"
+  "homepage": "https://github.com/Meera-Mohanan/ProjectSphere#readme"
 }
