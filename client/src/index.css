@@ -28,9 +28,8 @@ ul {
 
 /* * Global Styles * ---------------------------*/
 
-/* Brand Colors */
 :root {
-  --primary-color: #f1a80cfa;
+  --primary-color: #eb9d0d;
   --secondary-color: #6B7ACC;
   --tertiary-color: #BDBBF1;
   --background-dark: #06020E;
