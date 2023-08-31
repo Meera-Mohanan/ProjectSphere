@@ -4,15 +4,8 @@ import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { QUERY_SINGLE_PROJECT } from '../utils/queries';
 import TaskBoard from '../components/TaskBoard';
-
-
-
-// import ProjectList from '../components/ProjectList';
 import Nav from '../components/Nav';
 import Sidebar from '../components/SideBar';
-
-
-
 
 const Project = () => {
 
