@@ -232,7 +232,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: left;
-  background-color: var(--background-medium);
+  background-color: rgb(187, 117, 26);
   border-radius: 8px;
   padding: 20px;
   margin: 10px;
@@ -304,7 +304,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--background-medium);
+  background-color: rgb(109, 106, 106);
   border-radius: 8px;
   padding: 20px;
   margin: 10px;

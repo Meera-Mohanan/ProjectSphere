@@ -1,7 +1,8 @@
 import React from 'react';
 
 const Project = () => {
-  
+    //const { name, tasks } = project;
+
     return (
         <div className="col-12 col-xl-6">
             <div className="card mb-3">

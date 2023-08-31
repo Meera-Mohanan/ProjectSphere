@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import Login from '../components/Login'
 import SignUp from '../components/SignUp';
-
-// import logo from '../assets/images';
+import logo from '../assets/ProjectSphereLogo.svg';
 
 function AuthPage() {
   const [showSignUp, setShowSignUp] = useState(false);
@@ -14,7 +13,8 @@ function AuthPage() {
   return (
     <div className='auth-page'>
       <div className='logo-container'>
-      {/* <img className='logo-lg' src={logo} alt='ProjectSphere Logo'/> */}
+      {/* <h1>Welcome to Our App</h1> */}
+      <img className='logo-lg' src={logo} alt='ProjectSphere Logo'/>
       </div>
       <div className='form-container'>
       {showSignUp ? <SignUp /> : <Login />}

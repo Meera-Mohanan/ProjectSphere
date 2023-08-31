@@ -12,9 +12,9 @@
       "password": "password02"
     },
     {
-      "firstName": "Fake",
-        "lastName": "User",
-      "email": "fake@test.com",
+      "firstName": "Ian",
+        "lastName": "Thomas",
+      "email": "Ian@test.com",
       "password": "password03"
     }    
   ]

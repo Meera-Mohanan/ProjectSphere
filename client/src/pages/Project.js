@@ -5,8 +5,14 @@ import { useParams } from 'react-router-dom';
 import { QUERY_SINGLE_PROJECT } from '../utils/queries';
 import TaskBoard from '../components/TaskBoard';
 
+
+
+// import ProjectList from '../components/ProjectList';
 import Nav from '../components/Nav';
 import Sidebar from '../components/SideBar';
+
+
+
 
 const Project = () => {
 
@@ -23,6 +29,16 @@ const Project = () => {
   // Containers for the drop zones
   const containers = ['To Do', 'In Progress', 'Done'];
   const [parent, setParent] = useState(null);
+
+  // const draggableMarkup = (
+  //   // <DraggableCard id="draggable"><span></span></DraggableCard>
+  // );
+
+  // // If the item is dropped over a container, set it as the parent otherwise reset the parent to `null`
+  // function handleDragEnd(event) {
+  //   const {over} = event;
+  //   setParent(over ? over.id : null);
+  // }
 
 //JSX----------------------------------
 

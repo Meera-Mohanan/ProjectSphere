@@ -41,12 +41,17 @@ function App() {
           <Routes>
             <Route path='/' element={ <AuthPage />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/projects/:projectId" element={<Project />} />  
+            <Route path="/projects/:projectId" element={<Project />} />
+            Add more routes as needed
+                {/* <Route 
+                  path="/addProject" 
+                  element={<AddProject />} 
+                /> */}
           </Routes>
               
         </div>
       </Router>
-      </ChakraProvider>
+          </ChakraProvider>
     </ApolloProvider>
     
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { useNavigate } from "react-router-dom";
-// import logo from './';
+import logo from '../../assets/ProjectSphereLogo.svg';
 import Auth from "../../utils/auth"
 
 function NavBar() {
@@ -15,7 +15,7 @@ function NavBar() {
 
   return (
     <div className="nav-bar">
-      {/* <img className='logo' src={logo} alt='ProjectSphere Logo'/> */}
+      <img className='logo' src={logo} alt='ProjectSphere Logo'/>
       <div className="links">
         <Link to="/home">Home</Link>
         <Link to="/" onClick={() => Auth.logout()}>

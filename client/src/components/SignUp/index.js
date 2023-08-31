@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../../utils/mutations';
 import { useNavigate } from 'react-router-dom';
+// import logo from '../../assets/ProjectSphereLogo.svg';
 
 function SignUp() {
   const [formData, setFormData] = useState({
