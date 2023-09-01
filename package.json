@@ -19,5 +19,9 @@
     "concurrently": "^5.1.0"
   },
 
-  "homepage": "https://github.com/Meera-Mohanan/ProjectSphere#readme"
+  "homepage": "https://github.com/Meera-Mohanan/ProjectSphere#readme",
+
+"engines": {
+  "npm": "7.x"
+}  
 }
