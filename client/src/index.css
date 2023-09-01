@@ -44,21 +44,21 @@ ul {
 /* Text Styles */
 
 h1 {
-  color: var(--primary-color);
-  font-size: 3.4rem;
+  color: var(--secondary-color);
+  font-size: 4rem;
   font-weight: 800;
   margin-bottom: 10px;
 }
 
 h2 {
   color: var(--primary-color);
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 800;
 }
 
 h3 {
   color: var(--primary-color);
-  font-size: 1.8rem;
+  font-size: 3.5rem;
   font-weight: 600;
 }
 
@@ -132,10 +132,12 @@ p {
 }
 
 .sidebar-items {
-  font-size: 4.5rem;
-  font-weight: ;
+  font-size: 5.5rem;
+  font-weight: bold;
   margin-top: 1px;
   margin-left: 50px;
+  
+
 }
 
 .sidebar li {
@@ -228,6 +230,7 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  color: #0a4ca1;
 }
 
 /* Login/Sign up pages */
