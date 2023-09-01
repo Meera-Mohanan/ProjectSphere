@@ -1,14 +1,14 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import { QUERY_PROJECTS } from '../utils/queries';
-
-// Add a console.log statement to check the import path
-console.log("Checking import path for ProjectList:", '../components/ProjectList');
-
+import Nav from '../components/Nav';
 import ProjectList from '../components/ProjectList';
 import Sidebar from '../components/SideBar';
-import Nav from '../components/Nav';
 import Footer from "../components/Footer";
+
+// // Add a console.log statement to check the import path
+console.log("Checking import path for ProjectList:", '../components/ProjectList');
+
 
 const Home = () => {
     const { loading, data } = useQuery(QUERY_PROJECTS);
