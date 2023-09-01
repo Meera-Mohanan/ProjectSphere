@@ -88,10 +88,10 @@ export default function AddTask() {
             id="dueDate"
             value={dueDate}
             onChange={(e) => setDueDate(e.target.value)}
-            placeholder="DD/MM/YYYY"
+            placeholder="MM/DD/YYYY"
           />
           {dueDate && (
-            <p>Formatted Due Date: {dueDate}</p>
+            <p>Formatted Due Date: {dayjs(dueDate).format("MM/DD/YYYY")}</p>
           )}
           </div>
         </div>
