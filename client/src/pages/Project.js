@@ -5,13 +5,10 @@ import { useParams } from 'react-router-dom';
 import { QUERY_SINGLE_PROJECT } from '../utils/queries';
 import TaskBoard from '../components/TaskBoard';
 
-import {DndContext} from '@dnd-kit/core';
 
-import ProjectList from '../components/ProjectList';
 import Nav from '../components/Nav';
 import Sidebar from '../components/SideBar';
-import DraggableCard from '../components/DraggableCard';
-import DroppableZone from '../components/DroppableZone';
+
 
 
 
@@ -31,15 +28,15 @@ const Project = () => {
   const containers = ['To Do', 'In Progress', 'Done'];
   const [parent, setParent] = useState(null);
 
-  const draggableMarkup = (
-    <DraggableCard id="draggable"><span></span></DraggableCard>
-  );
+  // const draggableMarkup = (
+  //   <DraggableCard id="draggable"><span></span></DraggableCard>
+  // );
 
   // If the item is dropped over a container, set it as the parent otherwise reset the parent to `null`
-  function handleDragEnd(event) {
-    const {over} = event;
-    setParent(over ? over.id : null);
-  }
+  // function handleDragEnd(event) {
+  //   const {over} = event;
+  //   setParent(over ? over.id : null);
+  // }
 
 //JSX----------------------------------
 
