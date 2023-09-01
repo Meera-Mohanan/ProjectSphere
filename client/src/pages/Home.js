@@ -1,8 +1,9 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import { useState } from 'react';
-
 import { QUERY_PROJECTS } from '../utils/queries';
+
+// Add a console.log statement to check the import path
+console.log("Checking import path for ProjectList:", '../components/ProjectList');
 
 import ProjectList from '../components/ProjectList';
 import Sidebar from '../components/SideBar';
