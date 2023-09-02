@@ -8,7 +8,7 @@ import Nav from "../components/Nav";
 //   "../components/ProjectList"
 // );
 
-import ProjectList from "../ProjectList/index";
+import ProjectList from "../components/ProjectList/index";
 import Sidebar from "../components/SideBar/index";
 import Footer from "../components/Footer/index";
 

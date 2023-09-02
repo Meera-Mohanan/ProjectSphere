@@ -23,8 +23,8 @@ import {
   ADD_PROJECT,
   REMOVE_PROJECT,
   UPDATE_PROJECT,
-} from "../utils/mutations";
-import { QUERY_ME } from "../utils/queries";
+} from "../../utils/mutations";
+import { QUERY_ME } from "../../utils/queries";
 
 const ProjectList = ({ projects }) => {
   const {
