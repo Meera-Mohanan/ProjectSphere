@@ -8,9 +8,9 @@ import Nav from "../components/Nav";
 //   "../components/ProjectList"
 // );
 
-import ProjectList from "/components/Projectlist";
-import Sidebar from "../components/SideBar";
-import Footer from "../components/Footer";
+import ProjectList from "../ProjectList/index";
+import Sidebar from "../components/SideBar/index";
+import Footer from "../components/Footer/index";
 
 // // // Add a console.log statement to check the import path
 // console.log(
