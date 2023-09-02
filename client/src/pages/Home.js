@@ -2,7 +2,7 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 import { QUERY_PROJECTS } from '../utils/queries';
 import Nav from '../components/Nav';
-import ProjectList from '../components/ProjectList';
+import ProjectList from '../components/ProjectList/index';
 import Sidebar from '../components/SideBar';
 import Footer from "../components/Footer";
 
