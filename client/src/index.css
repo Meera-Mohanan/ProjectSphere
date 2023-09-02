@@ -102,7 +102,7 @@ p {
   text-decoration: none;
   color: var(--secondary-color);
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 2rem;
   padding-left: 20px;
 }
 
@@ -136,6 +136,7 @@ p {
 }
 
 .sidebar li {
+  font-size: 4rem;
   margin-bottom: 24px;
   padding-left: 10px;
 }
@@ -365,7 +366,7 @@ input:focus {
 
 
 .logo {
-  height: 100px;
+  height: 250px;
   width: 250px;
   margin-left: 24px;
 }
