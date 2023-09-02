@@ -8,15 +8,15 @@ import Nav from "../components/Nav";
 //   "../components/ProjectList"
 // );
 
-// import ProjectList from "/components/ProjectList";
+import ProjectList from "/components/Projectlist";
 import Sidebar from "../components/SideBar";
 import Footer from "../components/Footer";
 
-// // Add a console.log statement to check the import path
-console.log(
-  "Checking import path for ProjectList:",
-  "../components/ProjectList"
-);
+// // // Add a console.log statement to check the import path
+// console.log(
+//   "Checking import path for ProjectList:",
+//   "../components/ProjectList"
+// );
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_PROJECTS);
@@ -33,8 +33,8 @@ const Home = () => {
           {loading ? (
             <div>Loading...</div>
           ) : (
-            <h3>Project List Component</h3>
-            // <ProjectList projects={projects} />
+            // <h3>Project List Component</h3>
+            <ProjectList projects={projects} />
           )}
         </div>
       </div>
