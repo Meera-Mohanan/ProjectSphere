@@ -44,34 +44,34 @@ ul {
 /* Text Styles */
 
 h1 {
-  color: var(--secondary-color);
-  font-size: 4rem;
+  color: var(--primary-color);
+  font-size: 3.4rem;
   font-weight: 800;
   margin-bottom: 10px;
 }
 
 h2 {
   color: var(--primary-color);
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 800;
 }
 
 h3 {
-  color: var(--primary-color);
-  font-size: 3.5rem;
+  color: var(--background-light);
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
 h4 {
-  color: var(--primary-color);
-  font-size: 1.2rem;
+  color: var(--background-light);
+  font-size: .7rem;
   font-weight: 500;
   /* margin needs a css reset or the y coords wont work */
   margin: 16px, 10px, 8px;
 }
 
 p {
-  color: var(--primary-color);
+  color: var(--background-light);
   font-size: 1rem;
   font-weight: 400;
   margin: 0px;
@@ -102,7 +102,7 @@ p {
   text-decoration: none;
   color: var(--secondary-color);
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 1rem;
   padding-left: 20px;
 }
 
@@ -128,16 +128,11 @@ p {
   max-width: 20%;
   padding-left: 16px;
   padding-top: 20px;
-  
 }
 
 .sidebar-items {
-  font-size: 5.5rem;
-  font-weight: bold;
   margin-top: 1px;
   margin-left: 50px;
-  
-
 }
 
 .sidebar li {
@@ -217,7 +212,7 @@ p {
 .project-area {
   display: flex;
   flex-direction: column;
-  background-color: var(--secondary-color);
+  background-color: var(--background-medium);
   border-radius: 8px;
   padding: 10px;
   margin: 10px;
@@ -230,7 +225,6 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: #0a4ca1;
 }
 
 /* Login/Sign up pages */
@@ -371,12 +365,8 @@ input:focus {
 
 
 .logo {
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  display: flex;
-  height: 400px;
-  width: 400px;
+  height: 100px;
+  width: 250px;
   margin-left: 24px;
 }
 
@@ -589,7 +579,7 @@ select {
   font-weight: 700;
 }
 .task-card-btn:hover {
-  color: var(--secondary-color);
+  color: var(--background-medium);
   font-weight: 700;
 }
 
