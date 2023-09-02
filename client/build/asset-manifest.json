@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.12873df7.css",
+    "main.js": "/static/js/main.23d340fc.js",
+    "static/media/ProjectSphereLogo.svg": "/static/media/ProjectSphereLogo.5f6a6fd5dea136f3f968c80a2e17be23.svg",
+    "index.html": "/index.html",
+    "main.12873df7.css.map": "/static/css/main.12873df7.css.map",
+    "main.23d340fc.js.map": "/static/js/main.23d340fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12873df7.css",
+    "static/js/main.23d340fc.js"
+  ]
+}
