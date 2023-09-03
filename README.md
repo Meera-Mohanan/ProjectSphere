@@ -56,7 +56,7 @@ The ProjectSphere application is licensed under the MIT License. See the [LICENS
 
 ## Contributing
 
-If you would like to contribe to this project contact me through the email found in the questions section.
+If you would like to contribute to this project contact me through the email found in the questions section.
 
 ## Tests
 
