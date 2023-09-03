@@ -2,17 +2,12 @@ import React from "react";
 import TaskCard from "../TaskCard";
 
 function TaskLane({ title, tasks }) {
-
-
-
   // styling for the lanes
   const laneStyle = {
     padding: "5px",
     flexDirection: "column",
     minHeight: "10rem",
   };
-
-
   // return statement renders TaskCards into the corresponding lane
   return (
     <div className="lane" style={laneStyle}>

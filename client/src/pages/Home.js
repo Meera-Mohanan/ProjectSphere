@@ -1,48 +1,40 @@
-import React from "react";
-import { useQuery } from "@apollo/client";
-import { QUERY_PROJECTS } from "../utils/queries";
-import Nav from "../components/Nav";
+import React from 'react';
+import { useQuery } from '@apollo/client';
+import { useState } from 'react';
 
-// console.log(
-//   "Checking import path for ProjectList:",
-//   "../components/ProjectList"
-// );
+import { QUERY_PROJECTS } from '../utils/queries';
 
-import ProjectList from "../components/ProjectList/index";
-import Sidebar from "../components/SideBar/index";
-import Footer from "../components/Footer/index";
-
-// // // Add a console.log statement to check the import path
-// console.log(
-//   "Checking import path for ProjectList:",
-//   "../components/ProjectList"
-// );
+import ProjectList from '../components/ProjectList';
+import Sidebar from '../components/SideBar';
+import Nav from '../components/Nav';
+import Footer from "../components/Footer";
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_PROJECTS);
-  const projects = data?.projects || [];
+    const { loading, data } = useQuery(QUERY_PROJECTS);
+    const projects = data?.projects || [];
 
-  return (
-    <main>
-      <Nav />
-      <div className="homeContent">
-        <div className="sidebar">
-          <Sidebar projects={projects} />
+    return (
+      <main>
+        <Nav/>
+        <div className='homeContent'>
+          <div className="sidebar">
+            <Sidebar projects={projects}/>
+          </div>
+          <div className="project-area my-3">
+            { loading ? 
+              (
+                <div>Loading...</div>
+              ) : ( 
+                <ProjectList projects={projects}/>
+              )
+            }
+          </div>
         </div>
-        <div className="project-area my-3">
-          {loading ? (
-            <div>Loading...</div>
-          ) : (
-            // <h3>Project List Component</h3>
-            <ProjectList projects={projects} />
-          )}
+        <div className="footerContent">
+          <Footer/>
         </div>
-      </div>
-      <div className="footerContent">
-        <Footer />
-      </div>
-    </main>
-  );
+      </main>
+    );  
 };
 
 export default Home;
