@@ -31,8 +31,8 @@ To use the ProjectSphere application, follow these simple steps:
 1. Navigate to the deployed [ProjectSphere](https://sleepy-oasis-28097-ab964969462c.herokuapp.com/)
 2. Sign in with existing log in creditials or create a new one!
 3. Start adding projects/tasks and tracking your work!
-![Deployed Screenshot]("client/src/assets/Screenshot 2023-09-03 151448.png")
-![Deployed Screenshot]("client/src/assets/Screenshot 2023-09-03 200618.png")
+![Deployed Screenshot](client/src/assets/Screenshot 2023-09-03 151448.png)
+![Deployed Screenshot](client/src/assets/Screenshot 2023-09-03 200618.png)
 
 ## Credits
 
