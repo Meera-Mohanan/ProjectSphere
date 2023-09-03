@@ -66,7 +66,7 @@ const TaskCard = ({ task, projectId }) => {
       <div className="spacer"></div>
       <p>{task.comment}</p>
       <div className="spacer2"></div>
-      <p>Due: {dayjs(parseInt(task.dueDate)).format("DD/MM/YYYY")}</p>
+      <p>Due: {dayjs(parseInt(task.dueDate)).format("MM/DD/YYYY")}</p>
       <div className="spacer2"></div>
       <div className='btn-row'>
         <button className="task-card-btn" onClick={handleEditTask}>Edit</button>

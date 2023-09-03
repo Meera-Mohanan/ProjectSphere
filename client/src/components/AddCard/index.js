@@ -16,7 +16,7 @@ export default function AddTask() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const parsedDueDate = dayjs(dueDate).format("DD/MM/YYYY");
+      const parsedDueDate = dayjs(dueDate).format("MM/DD/YYYY");
       const { data } = await addTask({
         variables: {
           projectId: projectId,
@@ -88,10 +88,10 @@ export default function AddTask() {
             id="dueDate"
             value={dueDate}
             onChange={(e) => setDueDate(e.target.value)}
-            placeholder="DD/MM/YYYY"
+            placeholder="MM/DD/YYYY"
           />
           {dueDate && (
-            <p>Formatted Due Date: {dayjs(dueDate).format("DD/MM/YYYY")}</p>
+            <p>Formatted Due Date: {dayjs(dueDate).format("MM/DD/YYYY")}</p>
           )}
           </div>
         </div>
