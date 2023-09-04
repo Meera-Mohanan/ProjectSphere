@@ -44,8 +44,8 @@ ul {
 /* Text Styles */
 
 h1 {
-  color: var(--primary-color);
-  font-size: 3.4rem;
+  color: var(--secondary-color);
+  font-size: 2rem;
   font-weight: 800;
   margin-bottom: 10px;
 }
@@ -102,7 +102,7 @@ p {
   text-decoration: none;
   color: var(--secondary-color);
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.2rem;
   padding-left: 20px;
 }
 
@@ -128,9 +128,11 @@ p {
   max-width: 20%;
   padding-left: 16px;
   padding-top: 20px;
+  
 }
 
 .sidebar-items {
+  color: var(--secondary-color);
   margin-top: 1px;
   margin-left: 50px;
 }
@@ -159,6 +161,7 @@ p {
   align-items: left;
   padding: 10px;
   width: 50%;
+  
 }
 
 .right-col  {

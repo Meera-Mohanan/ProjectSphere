@@ -9,7 +9,7 @@ const SideBar = () => {
 
     return (
         <aside className="sidebar-items">
-            <h2>Projects</h2>
+            <h1>Projects</h1>
             <ul>
                 {loading ? (
                     <li>Loading...</li>
