@@ -30,11 +30,11 @@ ul {
 
 /* Brand Colors */
 :root {
-  --primary-color: #09dada;
+  --primary-color: #0af1f1;
   --secondary-color: #1181dd;
-  --tertiary-color: #0a4ca1;
+  --tertiary-color: #1b6cd6;
   --background-dark: #eef2f5;
-  --background-medium: #043d72;
+  --background-medium: #094680;
   --background-light: #EEE5E9;
   --success-color: #809848;
   --warning-color: #ffc107;
@@ -57,23 +57,23 @@ h2 {
 }
 
 h3 {
-  color: var(--background-light);
+  color: var(--primary-color);
   font-size: 1.4rem;
   font-weight: 600;
 }
 
 h4 {
-  color: var(--background-light);
-  font-size: .7rem;
+  color: var(--primary-color);
+  font-size: .8rem;
   font-weight: 500;
   /* margin needs a css reset or the y coords wont work */
   margin: 16px, 10px, 8px;
 }
 
 p {
-  color: var(--background-light);
-  font-size: 1rem;
-  font-weight: 400;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 450;
   margin: 0px;
 }
 
@@ -464,7 +464,7 @@ select {
   padding: 10px;
   margin-top: 10px;
   background-color: var(--background-medium);
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-weight: bold;
 }
 
@@ -475,7 +475,7 @@ select {
   margin-top: 10px;
   width: 105%;
   background-color: var(--background-medium);
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-weight: bold;
 }
 
@@ -486,20 +486,20 @@ select {
   margin-top: 10px;
   width: 105%;
   background-color: var(--background-medium);
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-weight: bold;
   border: none;
 }
 
 .spacer {
   height: 3px;
-  background-color: var(--background-light);
+  background-color: var(--background-medium);
   margin-bottom: 10px;
 }
 
 .spacer2 {
   height: 1px;
-  background-color: var(--background-light);
+  background-color: var(--background-medium);
   margin-bottom: 10px;
   margin-top: 10px;
 }
