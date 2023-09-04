@@ -32,8 +32,8 @@ To use the ProjectSphere application, follow these simple steps:
 2. Sign in with existing log in creditials or create a new one!
 3. Start adding projects/tasks and tracking your work!
 
-![Deployed Screenshot](client/src/assets/Screenshot%202023-09-03%20151448.png)
-![Deployed Screenshot](client/src/assets/Screenshot%202023-09-03%20200618.png)
+![Deployed Screenshot](client/src/assets/Screenshot%202023-09-04%20224621.png)
+![Deployed Screenshot](client/src/assets/Screenshot%202023-09-04%20230900.png)
 
 ## Credits
 
